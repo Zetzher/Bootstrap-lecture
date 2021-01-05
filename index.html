@@ -1,108 +1,240 @@
 <head>
-    <link rel="stylesheet" href="./style.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+    crossorigin="anonymous"
+  />
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
 </head>
 
 <body>
-    <header>
-        <div>
-          <div>
-            <img class="blackHeart" src="./images/black-heart.png" alt="black heart" />
-            <span> Nifty Penguin Magic </span>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#"> npm Enterprise </a></li>
-              <li><a href="#"> Products </a></li>
-              <li><a href="#"> Solutions </a></li>
-              <li><a href="#"> Resources </a></li>
-              <li><a href="#"> Docs </a></li>
-              <li><a href="#"> Support </a></li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </nav>
-        </div>
-      
-        <div>
-          <img class="logo" src="./images/npm-logo.png" alt="npm-logo">
-          <form class="search-form" action="/some-url">
-            <div>
-                <label for="search">
-                    <img src="./images/magnifying-glass.png" alt="magnifying-glass">
-                </label>
-                <input type="text" id="search" name="search" placeholder="Search packages">
-            </div>
-            <button type="submit">Search</button>
-          </form>
-          <div class="join-log-in">
-              <a href="/some-url" class="join">Join</a>
-              <a href="/some-url" class="log-in">Log in</a>
-          </div>
-        </div>
-    </header>
-    
-    <section id="welcome">
-        <h1>Build amazing things</h1>
-        <article>
-            <p>Essential JavaScript development tools that help you <br>
-            go to market faster and build powerful applications <br>
-            using modern open source code.</p>
-        </article>
-        <div>
-            <a class="plans-link" href="/some-url">See plans</a>
-            <a class="join-link" href="/some-url">Join for free</a>
-        </div>
-    </section>
-    
-    <section id="information">
-        <img class="hexagon" src="./images/triangle-hexagon.svg" alt="triangle-hexagon">
-        <div>
-            <h2>Bring the best of open source to your company</h2>
-        </div>
-        <article>
-            <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your developers <br>
-            already use it. Your company depends on it. Create an Org and get more out of the tools your <br>
-             team already knows and loves.</p>
-        </article>
-    </section>
-    
-    <section id="features">
-        <div>
-            <img src="./images/zero-configuration.svg" alt="zero-configuration">
-            <h3>Zero configuration</h3>
-            <p>Create an org, add your team, <br>
-            and start collaborating. <br>
-            Nothing to configure, set up, or <br>
-            manage.</p>
-        </div>
-        <div>
-            <img src="./images/team-management.svg" alt="team-management">
-            <h3>Team management</h3>
-            <p>Control who has access to <br>
-                what modules within your <br>
-                team namespace using <br>
-                straightforward team <br>
-                management capabilities.</p>
-        </div>
-        <div>
-            <img src="./images/familiar-features.svg" alt="familiar-features">
-            <h3>Familiar features</h3>
-            <p>npm Orgs has 100% parity with <br>
-                all the public npm registry <br>
-                features your developers <br>
-                already use.</p>
-        </div>
-        <div>
-            <img src="./images/npm-audit.svg" alt="npm-audit">
-            <h3>npm audit</h3>
-            <p>Enjoy the security auditing <br>
-                features built into the npm <br>
-                client, a zero-friction way to <br>
-                make open source software <br>
-                safer.</p>
-        </div>
-        
-    </section>
-    <div class="create-link">
-        <a href="/some-url">Create an Org</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-</body>
+  </nav>
+
+  <div
+    class="container"
+    style="
+      background-color: green;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    "
+  >
+    <div class="row">
+      <div class="col-sm" style="width: 600px">
+        This is where your dreams come true
+      </div>
+      <div class="col-sm">This is your right spot</div>
+      <div class="col-sm">This is Ironhack</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div
+      class="col-md-8"
+      style="
+        background-color: lightblue;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      "
+    >
+      <h3 style="font-size: 50px; position: relative; bottom: 50px">
+        It's gonna be tough
+      </h3>
+      <div
+        class="alert alert-success"
+        role="alert"
+        style="position: relative; top: 50px"
+      >
+        You will have a sensation of being in the last position always.
+      </div>
+    </div>
+    <div
+      class="col-6 col-md-4"
+      style="
+        background-color: lightcoral;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      "
+    >
+      <h3 style="position: relative; bottom: 50px">
+        But you will be prepared.
+      </h3>
+
+      <div
+        class="alert alert-info"
+        role="alert"
+        style="
+          position: relative;
+          top: 50px;
+          width: 200px;
+          border-radius: 100%;
+          height: 200px;
+          text-align: center;
+        "
+      >
+        <h3
+          style="font-size: 15px; margin: auto; position: relative; top: 50px"
+        >
+          And you will say... Oooooooh maaaaan, it wasn't that complicated.
+        </h3>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" style="background-color: antiquewhite; display: flex;
+    justify-content: center; height: 50vh; align-items: center">
+        <div class="carousel-item active" ">
+            <h3>This is how it looks!</h3>
+          </div>
+          <div class="carousel-item">
+            <h3>This is it!</h3>
+          </div>
+          <div class="carousel-item">
+            <h3>Dear Fellas!</h3>
+          </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Stupid FAQ 1
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+              </div>
+            </div>
+            
+           
+          </div>
+      </div>
+      <div class="col-sm">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Stupid FAQ 2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+            </div>
+          </div>
+      </div>
+      <div class="col-sm">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Stupid FAQ #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <div class="card" style="width: 18rem;">
+        <img src="./images/logo-ironhack.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">That's all for now</h5>
+          <p class="card-text">And now you can subscribe, give me a like and a round of applause.</p>
+          <a href="https://hablaremosconunvodka.com/" class="btn btn-primary">A special Gift</a>
+        </div>
+      </div>
+</div>
   
+</body>
